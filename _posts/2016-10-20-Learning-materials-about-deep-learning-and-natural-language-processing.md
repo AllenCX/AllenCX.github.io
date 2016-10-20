@@ -1,28 +1,28 @@
 ---
 layout: post
-title: "Tutorials and resources about deep learning on natural language processing"
+title: "Learning materials about deep learning and natural language processing"
 categories: Notes
 data: 2016-10-20
 ---
 
-#####**Last updated on 2016-10-20 and keep updating**
+#### **Last updated on 2016-10-20 and keep updating**
 
-###Lecture Notes and Tutorials
+### Lecture Notes and Tutorials
 1. [A Primer on Neural Network Models for Natural Language Processing], by [Yoav Goldberg].
 2. [Natural Language Understanding with Distributed Representation], by [Kyunghyun Cho], the course note for DS-GA 3001 of NYU.
 3. [A guide to convolution arithmetic for deep learning], an detailed and visualized tutorial of convolutional neural network. Especially the part of transposed convolution. Click [HERE](https://github.com/vdumoulin/conv_arithmetic) to visit the tutorial's github page and obtain GIF animation of convolution processes.
 
-###Books
+### Books
 1. [Deep Learning], a book written by three prominent scholars: [Ian Goodfellow], [Yoshua Bengio] and [Aaron Courville].
 2. [Neural Networks and Deep Learning], by [Michael Nielsen]
 
-###Courses and MOOCs
+### Courses and MOOCs
 1. IFT6266([2015](https://ift6266h15.wordpress.com/), [2016](https://ift6266h16.wordpress.com/)), Deep Learning instructed by Yoshua Bengio(other than 2015) or Aaron Courville(2015), Montreal University. 
 2. [CS224d, Deep Learning on Natural Language Processing], instructed by [Richard Socher], Stanford. 
 3. [CS231n, Convolutional Neural Networks for Visual Recognition], instructed by [Fei-Fei Li] and [Andrej Karpathy], Stanford.
 4. [Deep Learning](https://uwaterloo.ca/data-science/deep-learning), provided by UWaterloo.
 5. [Deep Learning summer school at Montreal].
-6. [Deep Learning Oxford].
+6. [Deep Learning at Oxford].
 
 
 [A Primer on Neural Network Models for Natural Language Processing]:https://arxiv.org/abs/1510.00726
