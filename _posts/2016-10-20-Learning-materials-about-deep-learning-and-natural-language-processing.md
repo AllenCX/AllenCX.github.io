@@ -20,7 +20,7 @@ data: 2016-10-20
 1. IFT6266([2015](https://ift6266h15.wordpress.com/), [2016](https://ift6266h16.wordpress.com/)), Deep Learning instructed by Yoshua Bengio(other than 2015) or Aaron Courville(2015), Montreal University. 
 2. [CS224d, Deep Learning on Natural Language Processing], instructed by [Richard Socher], Stanford. 
 3. [CS231n, Convolutional Neural Networks for Visual Recognition], instructed by [Fei-Fei Li] and [Andrej Karpathy], Stanford.
-4. [Deep Learning](https://uwaterloo.ca/data-science/deep-learning), provided by UWaterloo, ***strongly recommended for beginners.**
+4. [Deep Learning](https://uwaterloo.ca/data-science/deep-learning), provided by UWaterloo, **strongly recommended for beginners.**
 5. [Deep Learning summer school at Montreal].
 6. [Deep Learning at Oxford].
 7. [Hugo Larochelle' Deep Learning class].
