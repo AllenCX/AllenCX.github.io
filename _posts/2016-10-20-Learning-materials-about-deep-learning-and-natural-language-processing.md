@@ -23,6 +23,8 @@ data: 2016-10-20
 4. [Deep Learning](https://uwaterloo.ca/data-science/deep-learning), provided by UWaterloo.
 5. [Deep Learning summer school at Montreal].
 6. [Deep Learning at Oxford].
+7. [Hugo Larochelle' Deep Learning class].
+8. [Coursera's Neural Networks and Machine Learning], instructor [Geoffrey Hinton].
 
 
 [A Primer on Neural Network Models for Natural Language Processing]:https://arxiv.org/abs/1510.00726
@@ -36,7 +38,8 @@ data: 2016-10-20
 [CS231n, Convolutional Neural Networks for Visual Recognition]:http://cs231n.stanford.edu/
 [Deep Learning summer school at Montreal]:https://www.youtube.com/results?search_query=deep+learning+summer+school+2016
 [Deep Learning at Oxford]:https://www.youtube.com/results?search_query=deep+learning+oxford
-
+[Hugo Larochelle' Deep Learning class]:https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH
+[Coursera's Neural Networks and Machine Learning]:https://www.coursera.org/learn/neural-networks
 
 [Fei-Fei Li]:http://vision.stanford.edu/index.html
 [Andrej Karpathy]:http://cs.stanford.edu/people/karpathy/
@@ -48,3 +51,4 @@ data: 2016-10-20
 [Yoshua Bengio]:http://www.iro.umontreal.ca/~bengioy/yoshua_en/index.html
 [Aaron Courville]:https://aaroncourville.wordpress.com/
 [Richard Socher]:http://www.socher.org/
+[Geoffrey Hinton]:http://www.cs.toronto.edu/~hinton/
