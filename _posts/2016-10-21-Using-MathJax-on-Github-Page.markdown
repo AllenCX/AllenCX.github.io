@@ -4,7 +4,6 @@ title:  "Using MathJax on Github Page"
 categories: miscellaneous
 ---
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 After some hours' tedious trying, I finally can using MathJax to write math formular correctly. 
 
 At first, copy and paste following line to your markdown file.
