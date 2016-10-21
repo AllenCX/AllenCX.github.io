@@ -1,4 +1,8 @@
-###Linear Regression
+---
+layout: post
+title:  "Learning Notes:Linear Regression"
+categories: "Notes of ML"
+---
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
