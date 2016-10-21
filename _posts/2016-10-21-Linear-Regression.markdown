@@ -4,9 +4,7 @@ title:  "Learning Notes:Linear Regression"
 categories: "Notes of ML"
 ---
 
-<script type="text/javascript"
- src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 Linear Regression is one of the most fundamental and classic regresion method. In Linear Regression, we assume that given an input  vector \\(X^T = (X_{1}, X_{2},..., X_{p})\\), we predict output \\(Y\\) from the model:
 $$\hat{Y} = f(X) = \hat\beta_0 + \sum_{j=1}^{p} X_j \hat{\beta}_{j} \qquad(1)$$ where \\(\hat\beta_0\\) is bias. Also, we can write euqation 1 to: $$\hat{Y} = X^T\hat\beta \qquad(2)$$ if we assume all elements in \\(X_0\\) is \\(1\\).
