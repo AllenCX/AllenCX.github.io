@@ -32,4 +32,56 @@ $$ \hat\beta = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y} \qquad(6).$$
 
 According to quation 2, we obtain the predict value: 
 
-$$\mathbf{\hat{y}} = \hat\beta\mathbf{X} = \hat\beta\mathbf{X} \qquad(7)$$
+$$\mathbf{\hat{y}} = \mathbf{X}\hat\beta \qquad(7)$$
+
+where the $$\hat{y}$$ is the estimation of $$Y$$.
+
+### Implementing with Python
+For full code, click [here](https://github.com/AllenCX/toyML/blob/master/Linear_Regression/linear_regression.ipynb)
+
+#### 2D example:
+
+{% highlight python %}
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib.pyplot as plt
+from numpy.linalg import inv
+N = 50
+
+#simple 2D linear regression example
+x = np.linspace(0, 10, num=N).reshape(N, 1)
+y = np.linspace(0, 10, num=N).reshape(N, 1)
+t = np.random.normal(0, 1, (N, 1))
+y += t
+beta_hat = inv(x.T.dot(x)).dot(x.T).dot(y)
+
+fig, ax = plt.subplots()
+ax.plot(x, y, 'bo')
+ax.plot(x, x.dot(beta_hat), 'r')
+plt.show()
+{% endhighlight python %} 
+
+![2D example][1]
+
+#### 3D example:
+{% highlight python %}
+
+# Continueing the 2D example
+z = np.linspace(10, 20, num=N).reshape(N, 1)
+x_3d = np.concatenate((x, z), axis=1)
+
+beta_hat_3d = inv(x_3d.T.dot(x_3d)).dot(x_3d.T).dot(y)
+fig_3d = plt.figure()
+ax_3d = fig_3d.add_subplot(111, projection='3d')
+ax_3d.scatter(x, z, y)
+y_3d_hat = x_3d.dot(beta_hat_3d)
+ax_3d.plot(x, z, y_3d_hat.reshape(N), color='red')
+plt.show()
+{% endhighlight python %}
+
+
+![3D example][2]
+
+
+  [1]: https://raw.githubusercontent.com/AllenCX/toyML/master/Linear_Regression/2d_example.png
+  [2]: https://raw.githubusercontent.com/AllenCX/toyML/master/Linear_Regression/3d_example.png
