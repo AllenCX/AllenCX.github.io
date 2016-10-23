@@ -15,4 +15,24 @@ If x is a continous variable equation 1 can be written as
 
 $$H(x) = \lim_{\Delta\to 0} \left\{\sum_i p(x_i)\Delta \ln{p(x_i)} \right\} = - \int{p(x) \ln{p(x)}\, \mathrm{d}x} \tag{2}$$
 
-###### To be continued 
+For a density defined over multiple continous variables, denoted collectively by the vector $$\mathbf{x}$$, the differential entropy is given by
+
+$$H[\mathbf{x}] = - \int p(\mathbf{x})\ln{p(\mathbf(x))} \,\mathrm{d}\mathbf{x} \tag{3}$$
+
+### KL divergence
+**Relative entropy** or **Kullback-Leibler divergence**, or **KL divergence** for short, is a quantity that measures the addtional information needed by an approximate distribution $$q(\mathbf{x})$$ over $$\mathbf{x}$$ to model some unknown distribution $$p(\mathbf{x})$$. In other words, KL divergence measures the similarity bewteen $$q(\mathbf{x})$$ and $$p(\mathbf{x})$$.
+
+For discrete random variable $$x$$, KL divergence can be written as
+
+$$KL(p||q) = \sum_i p(x_i)\log \frac{p(x_i)}{q(x_i)} \tag{4}$$
+
+For continous random variable or vector $$\mathbf{x}$$, KL divergence can be written as
+
+$$\begin{align}
+KL(p||q) & = -\int p(\mathbf{x})\ln{q(\mathbf{x})} \,\mathrm{d}\mathbf{x} - \left( -\int p(\mathbf{x})\ln{p(\mathbf{x})} \,\mathrm{d}x \right) \\
+& = -\int p(\mathbf{x}) \left\lbrace \frac{q(\mathbf{x})}{p(\mathbf{x})} \right\rbrace \tag{5}
+\end{align}$$
+
+Note that KL divergence is not a symmertical quantity, which means $$KL(p\vert\vert {q}) = \sum_i$$
+
+
