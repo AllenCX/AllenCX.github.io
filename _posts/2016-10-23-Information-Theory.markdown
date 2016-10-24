@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learning Notes:Linear Regression"
+title:  "Learning Notes: Information Theory"
 categories: Notes of ML
 ---
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
@@ -30,9 +30,15 @@ For continous random variable or vector $$\mathbf{x}$$, KL divergence can be wri
 
 $$\begin{align}
 KL(p||q) & = -\int p(\mathbf{x})\ln{q(\mathbf{x})} \,\mathrm{d}\mathbf{x} - \left( -\int p(\mathbf{x})\ln{p(\mathbf{x})} \,\mathrm{d}x \right) \\
-& = -\int p(\mathbf{x}) \left\lbrace \frac{q(\mathbf{x})}{p(\mathbf{x})} \right\rbrace \tag{5}
+& = -\int p(\mathbf{x}) \ln \left\lbrace \frac{q(\mathbf{x})}{p(\mathbf{x})} \right\rbrace \mathrm{d}x \tag{5}
 \end{align}$$
 
-Note that KL divergence is not a symmertical quantity, which means $$KL(p\vert\vert {q}) = \sum_i$$
+Note that KL divergence is not a symmertical quantity, which means $$KL(p\vert\vert {q}) \not\equiv KL(p \vert\vert {q})$$. At any time, KL divergence satisfies $$KL(p \vert\vert {q}) \ge 0$$, with the equality if and only if, $$p(\mathbf{x})=q(\mathbf{x})$$. The insight behind the lower bound, which equals to $$0$$ of KL divergence shows that we cannot compress data or use another distribution($$q$$) to model some unknown distribution($$p$$) without lose its original information.
 
+On some times, we can use KL divergence to approximate the unknown distribution $$p(\mathbf{x})$$. Suppose we have a set of data points $$\mathbf{x}={x_1, x_2,..., x_n}$$, a set of parameters $$\mathbf{\theta}$$, like mutivariate Guassian. Then we can contruct a distribution $$q(\mathbf{x}\vert\mathbf{\theta})$$ to model $$p(\mathbf{x})$$. In order to make $$q(\mathbf{x}\vert\mathbf{\theta})$$ more likely to $$p(\mathbf{x})$$, we can minimize the KL divergence
 
+$$KL(p\vert\vert{q}) \simeq \sum_i \left\lbrace -\ln{q(\mathbf{x}_n\vert\mathbf{\theta})} + \ln{p(\mathbf{x}_n)} \right\rbrace    \tag{6}$$
+
+Noticed that the second term of equation (6) is independent of $$\mathbf{\theta}$$. Meanwhile, the first term is the negative log likelihood function for $$\mathbf{\theta}$$ under distribution $$q(\mathbf{x}\vert\mathbf{\theta})$$ evaluated using training set. Thus, minimizing KL divergence equals to maximizing the likelihood function.
+
+#### Reference: Pattern Recognition and Machine Learning
