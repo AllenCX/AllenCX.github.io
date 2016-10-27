@@ -25,6 +25,7 @@ data: 2016-10-20
 6. [Deep Learning at Oxford].
 7. [Hugo Larochelle' Deep Learning class].
 8. [Coursera's Neural Networks and Machine Learning], instructor [Geoffrey Hinton].
+9. [Udacity's Deep Learning course].
 
 
 [A Primer on Neural Network Models for Natural Language Processing]:https://arxiv.org/abs/1510.00726
@@ -40,6 +41,8 @@ data: 2016-10-20
 [Deep Learning at Oxford]:https://www.youtube.com/results?search_query=deep+learning+oxford
 [Hugo Larochelle' Deep Learning class]:https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH
 [Coursera's Neural Networks and Machine Learning]:https://www.coursera.org/learn/neural-networks
+[Udacity's Deep Learning course]:https://cn.udacity.com/course/deep-learning--ud730
+
 
 [Fei-Fei Li]:http://vision.stanford.edu/index.html
 [Andrej Karpathy]:http://cs.stanford.edu/people/karpathy/
