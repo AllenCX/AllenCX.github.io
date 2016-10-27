@@ -13,9 +13,9 @@ where $$P(h\vert D)$$ is **posterior probability**, $$P(D\vert h)$$ is **likelih
 
 Note that, at some times, $$P(D)$$ can be obtained by **the law of total probability**.
 
-At some other times, we need not caculate $$P(D)$$ because it is constant and will not influence the ultimate result.
-
 $$P(D) = \sum_i{P(D|h_i)P(h_i)} \tag{2}$$
+
+At some other times, we need not to caculate $$P(D)$$ because it is constant and will not influence the ultimate result.
 
 #### An example(from [Udacity's Machine Learning course])
 Suppose a kind of machine can diagnose a patient whether have cancer or not. In most of the time, the machine will work without mistake. However, sometimes, the machine may goes wrong. Statistically, on 98% of the time, that the machine will correctly diagnose a person without cancer, which is also called correct positive; on 97% of the time, the machine will conclude a cancer patient has cancer, which is also called correct negative. In addition, we also know that there are only 0.8% of the total population who have cancer. Now the question is when the machine diagnose one man is healthy, what's the probablity that the man who take the diagnose is healthy?
