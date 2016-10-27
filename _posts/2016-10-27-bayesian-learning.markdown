@@ -44,7 +44,7 @@ $$P(\text{The man is healthy}) = \frac{0.02976}{0.02976+0.00784} \approx 79\%$$
 
 $$P(\text{The man has cancer}) = \frac{0.00784}{0.0296+0.00784} \approx 21\%$$
 
-So theoretically, if we trust the machine all the time, we will tell everyone who take the diagnose that he or she is healthy. 
+So theoretically, we will tell everyone who take the diagnose that he or she is healthy. 
 
 The conclusion looks weird, isn't it? The reason is that in daily life, only a small percent of the population who has cancer, which caused the imbalance of the dataset.
 
