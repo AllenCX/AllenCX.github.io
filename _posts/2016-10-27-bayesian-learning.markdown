@@ -40,9 +40,9 @@ Because $$P(+)$$ is constant and we only need a normalized probability, thus we 
 
 Then we normalize $$\ref{3}$$ and $$\ref{4}$$ we get
 
-$$P(\text{The machine is right}) = \frac{0.02976}{0.02976+0.00784} \approx 79\%$$
+$$P(\text{The man is healthy}) = \frac{0.02976}{0.02976+0.00784} \approx 79\%$$
 
-$$P(\text{The machine is wrong}) = \frac{0.00784}{0.0296+0.00784} \approx 21\%$$
+$$P(\text{The man has cancer}) = \frac{0.00784}{0.0296+0.00784} \approx 21\%$$
 
 So theoretically, if we trust the machine all the time, we will tell everyone who take the diagnose that he or she is healthy. 
 
